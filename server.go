@@ -22,7 +22,7 @@ func main() {
 	e.GET("/show", show)
 	e.GET("/users/:name", getUerName)
 	e.POST("/save", save)
-	e.POST("/users", save)
+	e.POST("/users", saveUser)
 	// Start this server with port1232
 	e.Logger.Fatal(e.Start(":1323"))
 }
